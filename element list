@@ -1,0 +1,5 @@
+Header: <header> with <h1>
+Navigation bar: <nav> with <ul>,<li> and <a>
+Sidebar: <aside> with <ul>,<li> and <a>
+Body: <main> and <article> with <h2>,<h3>,<p> and <img>
+Footer: <footer>
