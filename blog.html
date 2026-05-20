@@ -1,0 +1,250 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Homepage</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+
+      /* Full-page layout */
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+
+    /* Header */
+    header {
+      background: #001dac;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Navigation */
+    nav {
+      background: #5fa9f9;
+      padding: 15px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main layout grows to fill space */
+    .container {
+      display: flex;
+      flex: 1;
+    }
+
+    /* Sidebar */
+    aside {
+      width: 25%;
+      background: #e5e5e5;
+      padding: 20px;
+    }
+
+    aside h2 {
+      margin-bottom: 15px;
+    }
+
+    aside ul {
+      list-style: none;
+    }
+
+    aside li {
+      margin-bottom: 10px;
+    }
+
+    /* Main Content */
+    main {
+      width: 75%;
+      padding: 30px;
+      background: white;
+    }
+
+    .page-title {
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #1e3a5f;
+    }
+
+    /* Blog Cards */
+    .blog-post {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 40px;
+      align-items: flex-start;
+    }
+
+    .blog-post img {
+      width: 220px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .blog-content h3 {
+      margin-bottom: 10px;
+      color: #16324f;
+    }
+
+    .blog-content p {
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      background: #001dac;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      aside,
+      main {
+        width: 100%;
+      }
+
+      .blog-post {
+        flex-direction: column;
+      }
+
+      .blog-post img {
+        width: 100%;
+        height: auto;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>My Blog Website</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Articles</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Layout -->
+  <div class="container">
+
+    <!-- Sidebar -->
+    <aside>
+      <h2>Sidebar</h2>
+
+      <ul>
+        <li><a href="#">Latest Posts</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Archives</a></li>
+        <li><a href="#">Popular Posts</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+
+      <h2 class="page-title">Latest Blog Posts</h2>
+
+      <!-- Blog Post 1 -->
+      <article class="blog-post">
+        <img src="https://via.placeholder.com/220x150" alt="Blog Image">
+
+        <div class="blog-content">
+          <h3>Blog Title One</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Integer vel augue nec justo volutpat aliquet.
+          </p>
+        </div>
+      </article>
+
+      <!-- Blog Post 2 -->
+      <article class="blog-post">
+        <img src="https://via.placeholder.com/220x150" alt="Blog Image">
+
+        <div class="blog-content">
+          <h3>Blog Title Two</h3>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium.
+          </p>
+        </div>
+      </article>
+
+      <!-- Blog Post 3 -->
+      <article class="blog-post">
+        <img src="https://via.placeholder.com/220x150" alt="Blog Image">
+
+        <div class="blog-content">
+          <h3>Blog Title Three</h3>
+          <p>
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+            aut fugit, sed quia consequuntur magni dolores.
+          </p>
+        </div>
+      </article>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 My Blog Website | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
+```
+x
